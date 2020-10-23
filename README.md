@@ -37,11 +37,13 @@ cp .env.local.example .env.local
 Then set each variable on `.env.local`:
 
 - `README_AUTH_TOKEN` should be the API token you just copied.
+- `README_BASE_URL` should be the README url for your account
 
 Your `.env.local` file should look like this:
 
 ```bash
 README_AUTH_TOKEN=...
+README_BASE_URL=...
 ```
 
 ## Learn More

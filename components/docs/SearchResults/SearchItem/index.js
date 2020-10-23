@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import styles from './SearchItem.module.css';
+import { baseDocsUrl } from 'docs/lib/content/docs';
 
 const Searchitem = ({ item }) => (
   <li className={`${styles.wrapper} mb-1 last:mb-0 cursor-pointer`}>
@@ -19,7 +20,7 @@ const Searchitem = ({ item }) => (
 
 const ExternalResult = ({ children, item }) => (
   <a
-    href={`https://docs.scale.com/reference-link/${item.slug}`}
+    href={`${baseDocsUrl}${item.slug}`}
     target="_blank"
     className={`${styles.link} font-normal block bg-white dark:bg-gray-800 py-1 hover:bg-gray-100 dark:hover:bg-gray-700 transition-background duration-500`}
   >

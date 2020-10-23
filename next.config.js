@@ -8,4 +8,7 @@ module.exports = {
       },
     ]
   },
+  env: {
+    README_BASE_URL: process.env.README_BASE_URL,
+  },
 }
